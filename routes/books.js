@@ -16,7 +16,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/search',function(req, res, next){
-    res.render("search.ejs")
+    res.render("search.ejs", { formData: {} });
 });
 
 router.get('/search-result', [

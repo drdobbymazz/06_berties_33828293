@@ -80,7 +80,7 @@ router.get('/list', redirectLogin, function(req, res, next) {
 });
 
 router.get('/login', function(req, res, next) {
-    res.render('login.ejs')
+    res.render('login.ejs', { formData: {} });
 });
 
 router.post('/loggedin',
